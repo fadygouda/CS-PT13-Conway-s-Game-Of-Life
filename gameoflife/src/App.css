@@ -20,13 +20,13 @@
 }
 
 .center {
-  margin: auto;
+  margin:  0 auto;
   display: table;
   margin-top: 30px;
 }
 
 .grid {
-  width: 80px;
+  width: 200px;
   line-height: 0;
   margin: auto;
   margin-top: 20px;
