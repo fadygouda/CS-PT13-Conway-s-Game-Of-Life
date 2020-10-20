@@ -13,6 +13,9 @@ class Buttons extends React.Component {
                     <button className = "btn btn-default" onClick={this.props.pauseButton}>
                         Pause
                     </button>
+                    <button className = "btn btn-default" onClick={this.props.speedUp}>
+                        Fast
+                    </button>
                     <button className = "btn btn-default" onClick={this.props.randomSeed}>
                         Random
                     </button>

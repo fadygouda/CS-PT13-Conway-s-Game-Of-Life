@@ -11,7 +11,7 @@ class App extends React.Component {
     super();
     this.rows = 25;
     this.cols = 25;
-    this.speed = 300;
+    this.speed = 400;
     ;
     
     this.state = {
@@ -27,6 +27,11 @@ class App extends React.Component {
     this.setState({
       fullGrid: copy
     })
+  }
+
+  speedUp = () => {
+    this.speed = 100;
+    this.playButton();
   }
 
   playButton = () => {
@@ -116,6 +121,7 @@ class App extends React.Component {
           pauseButton={this.pauseButton}
           glider={this.glider}
           clear = {this.clear}
+          speedUp = {this.speedUp}
         />
         <Grid 
           rows = {this.rows}
