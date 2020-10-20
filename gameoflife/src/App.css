@@ -1,0 +1,46 @@
+.box {
+  display: inline-block;       
+  border: .5px solid black;
+  width: 7.5px;
+  height: 7.5px;
+  margin-left: -.5px;
+  margin-bottom: -.5px;
+  }
+
+.off {
+  background-color: #032749;
+}
+
+.on {
+  background-color: #ff0000;
+}
+  
+.box:hover { 
+  background: white;
+}
+
+.center {
+  margin: auto;
+  display: table;
+  margin-top: 10px;
+}
+
+.grid {
+  width: 75px;
+  line-height: 0;
+  margin: auto;
+  margin-top: 20px;
+}
+  
+h1, h2, h3, h4 {
+  color:#032749;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  margin-top: 10px;
+}
+
+h4 {
+  margin-top: 0px;
+
+}
