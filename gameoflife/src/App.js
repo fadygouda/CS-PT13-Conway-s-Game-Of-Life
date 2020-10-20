@@ -9,8 +9,8 @@ import Buttons from './components/buttons'
 class App extends React.Component {
   constructor() {
     super();
-    this.rows = 25;
-    this.cols = 25;
+    this.rows = 35;
+    this.cols = 50;
     this.speed = 300;
     ;
     
