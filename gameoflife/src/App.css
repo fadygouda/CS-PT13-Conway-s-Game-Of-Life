@@ -1,10 +1,10 @@
 .box {
   display: inline-block;       
-  border: 1px solid black;
-  width: 15px;
-  height: 15px;
-  margin-left: -1px;
-  margin-bottom: -1px;
+  border: .5px solid black;
+  width: 7.5px;
+  height: 7.5px;
+  margin-left: -0.5px;
+  margin-bottom: -0.5px;
   }
 
 .off {
@@ -26,7 +26,7 @@
 }
 
 .grid {
-  width: 160px;
+  width: 80px;
   line-height: 0;
   margin: auto;
   margin-top: 20px;
