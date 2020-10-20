@@ -41,7 +41,7 @@ class App extends React.Component {
   }
 
   glider = () => {
-    let copy = this.state.fullGrid;
+    let copy = Array(this.rows).fill().map(() => Array(this.cols).fill(false));
 
     copy[2][4] = "box on";
     copy[3][2] = "box on";
@@ -99,7 +99,7 @@ class App extends React.Component {
   
   clear = () => {
     this.pauseButton();
-    let grid = this.state.fullGrid;
+    let grid = Array(this.rows).fill().map(() => Array(this.cols).fill(false));
     this.setState({
       fullGrid: grid,
       generation: 0
