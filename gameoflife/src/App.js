@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Grid from './components/grid'
 import Buttons from './components/buttons'
+import HowToPlay from './components/howtoplay'
 
 
 
@@ -130,6 +131,7 @@ class App extends React.Component {
           selectBox = {this.selectBox}
         />
         <h2>Generations: {this.state.generation}</h2>
+        <HowToPlay />>
       </div>
     )
   }
