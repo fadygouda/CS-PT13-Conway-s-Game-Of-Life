@@ -6,8 +6,8 @@
 .box {
   display: inline-block;       
   border: 1px solid black;
-  width: 15px;
-  height: 15px;
+  width: 19px;
+  height: 19px;
   margin-left: -1px;
   margin-bottom: -1px;
   }
@@ -31,7 +31,7 @@
 }
 
 .grid {
-  width: 160px;
+  width: 200px;
   line-height: 0;
   margin: auto;
   margin-top: 20px;
