@@ -1,6 +1,6 @@
 .app {
-  background-color: #69c6f4;
-  border: 5px #ff0000 solid
+  background-color: #c4ddf2;
+  border: 5px  #032749 solid
 }
 
 .box {
@@ -40,27 +40,29 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  max-width: 70%;
+  max-width: 75%;
   border: 2px solid black;
   margin: 0 auto;
-  padding: 1rem 1rem 1rem 1rem
+  padding: 1rem 1rem 1rem 1rem;
 
 }
 .rules {
-  max-width: 40%;
+  max-width: 45%;
   font-size: .7rem;
   border: 1px dashed #ff0000;
   padding: 1rem 1rem 1rem 1rem;
   text-align: justify;
-  color: #032749
+  color: #032749;
+  font-size: .85rem;
 }
 .gameinfo {
-  max-width: 40%;
+  max-width: 45%;
   font-size: .7rem;
-  border: 1px dashed black;
+  border: 1px dashed #ff0000;
   padding: 1rem 1rem 1rem 1rem;
   text-align: justify;
   color: #032749;
+  font-size: .85rem;
 }
   
 
