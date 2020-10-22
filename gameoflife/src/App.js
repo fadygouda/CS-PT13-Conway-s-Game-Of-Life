@@ -12,7 +12,7 @@ class App extends React.Component {
     super();
     this.rows = 25;
     this.cols = 25;
-    this.speed = 500;
+    this.speed = 300;
     ;
     
     this.state = {
@@ -31,7 +31,11 @@ class App extends React.Component {
   }
 
   speedUp = () => {
-    this.speed = 100;
+    this.speed = 50;
+    this.playButton();
+  }
+  slowDown = () => {
+    this.speed = 500;
     this.playButton();
   }
 
@@ -54,6 +58,21 @@ class App extends React.Component {
     copy[3][4] = "box on";
     copy[4][3] = "box on";
     copy[4][4] = "box on";
+
+    this.setState({
+      fullGrid: copy,
+      generation: 0
+    })
+    this.pauseButton();
+  }
+  plusSign = () => {
+    let copy = Array(this.rows).fill().map(() => Array(this.cols).fill(false));
+
+    copy[12][12] = "box on";
+    copy[13][12] = "box on";
+    copy[11][12] = "box on";
+    copy[12][13] = "box on";
+    copy[12][11] = "box on";
 
     this.setState({
       fullGrid: copy,
@@ -125,6 +144,8 @@ class App extends React.Component {
             glider={this.glider}
             clear = {this.clear}
             speedUp = {this.speedUp}
+            plusSign = {this.plusSign}
+            slowDown = {this.slowDown}
           />
           <Grid 
             rows = {this.rows}

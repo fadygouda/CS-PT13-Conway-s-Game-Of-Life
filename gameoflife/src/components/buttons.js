@@ -16,11 +16,17 @@ class Buttons extends React.Component {
                     <button className = "btn btn-default" onClick={this.props.speedUp}>
                         Fast
                     </button>
+                    <button className = "btn btn-default" onClick={this.props.slowDown}>
+                        Slow
+                    </button>
                     <button className = "btn btn-default" onClick={this.props.randomSeed}>
                         Random
                     </button>
                     <button className = "btn btn-default" onClick={this.props.glider}>
                         Glider
+                    </button>
+                    <button className = "btn btn-default" onClick={this.props.plusSign}>
+                        +
                     </button>
                     <button className = "btn btn-default" onClick={this.props.clear}>
                         Clear
