@@ -12,7 +12,7 @@ class App extends React.Component {
     super();
     this.rows = 25;
     this.cols = 25;
-    this.speed = 400;
+    this.speed = 500;
     ;
     
     this.state = {
@@ -114,24 +114,30 @@ class App extends React.Component {
   
   render() {
     return (
-      <div>
-        <h1>The Game of Life</h1>
-        <Buttons
-          playButton={this.playButton}
-          randomSeed={this.randomSeed}
-          pauseButton={this.pauseButton}
-          glider={this.glider}
-          clear = {this.clear}
-          speedUp = {this.speedUp}
-        />
-        <Grid 
-          rows = {this.rows}
-          cols = {this.cols}
-          fullGrid = {this.state.fullGrid}
-          selectBox = {this.selectBox}
-        />
-        <h2>Generations: {this.state.generation}</h2>
-        <HowToPlay />>
+      <div className = "app">
+        <div>
+          <h1>The Game of Life</h1>
+        
+          <Buttons
+            playButton={this.playButton}
+            randomSeed={this.randomSeed}
+            pauseButton={this.pauseButton}
+            glider={this.glider}
+            clear = {this.clear}
+            speedUp = {this.speedUp}
+          />
+          <Grid 
+            rows = {this.rows}
+            cols = {this.cols}
+            fullGrid = {this.state.fullGrid}
+            selectBox = {this.selectBox}
+          />
+          <br />
+          <h2>Generations: {this.state.generation}</h2> <br />
+        </div>
+        <div>
+          <HowToPlay />
+        </div>
       </div>
     )
   }

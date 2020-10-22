@@ -1,3 +1,8 @@
+.app {
+  background-color: #69c6f4;
+  border: 5px #ff0000 solid
+}
+
 .box {
   display: inline-block;       
   border: 1px solid black;
@@ -35,7 +40,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  max-width: 60%;
+  max-width: 70%;
   border: 2px solid black;
   margin: 0 auto;
   padding: 1rem 1rem 1rem 1rem
@@ -44,7 +49,7 @@
 .rules {
   max-width: 40%;
   font-size: .7rem;
-  border: 1px dashed black;
+  border: 1px dashed #ff0000;
   padding: 1rem 1rem 1rem 1rem;
   text-align: justify;
   color: #032749
@@ -64,7 +69,6 @@ h1, h2, h3, h4 {
   margin: auto;
   text-align: center;
   width: 50%;
-  margin-top: 10px;
 }
 
 h4 {
