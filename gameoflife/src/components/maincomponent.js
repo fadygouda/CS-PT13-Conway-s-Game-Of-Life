@@ -15,6 +15,8 @@ class MainComponent extends React.Component {
             fullGrid: Array(this.rows).fill().map(() => Array(this.cols).fill(false))
         }
     }
+    // to select box, create a clone of the grid and the logic here is if you click you 
+    // set the clone to the second state, dead or alive and save the new clone to your state
     selectBox = (row, col) => {
         let copy = clone(this.state.fullGrid)
         copy[row][col] = !copy[row][col]
@@ -33,6 +35,8 @@ class MainComponent extends React.Component {
     }
 
     playButton = () => {
+
+        //intervalId is created whenever setInterval is called, so you can pass functions into intervalId when calling setInterval
         console.log("play")
         clearInterval(this.intervalId);
         this.intervalId = setInterval(this.play, this.speed)
@@ -47,6 +51,7 @@ class MainComponent extends React.Component {
         let copy = clone(this.state.fullGrid);
         for(let i = 0; i < this.rows; i++) {
             for(let j = 0; j <this.cols; j++) {
+                // if each block has 25% chance of being on or off
                 if (Math.floor(Math.random() * 4) === 1) {
                 copy[i][j] = true;
                 }
@@ -56,7 +61,7 @@ class MainComponent extends React.Component {
             fullGrid: copy
         })
     }
-    
+
     glider = () => {
         let copy = Array(this.rows).fill().map(() => Array(this.cols).fill(false));
         copy[2][4] = "box on";
@@ -89,11 +94,14 @@ class MainComponent extends React.Component {
     }
     
     play = () => {
+        //this is where we use double buffering by creating an initial grid and a copy of that grid
+        //
         let grid = this.state.fullGrid;
         let grid2 = clone(this.state.fullGrid);
 
         for (let i = 0; i < this.rows; i++) {
             for (let j = 0; j < this.cols; j++) {
+                //count is how many neighbors it has that are alive
                 let count = 0
                 if (i > 0) if (grid[i-1][j]) count++;
                 if( i > 0 && j > 0) if(grid[i-1][j-1]) count++;
@@ -107,24 +115,10 @@ class MainComponent extends React.Component {
                 if (!grid[i][j] && count === 3) grid2[i][j] = true;
         }
         }
+        // set the clone grid to the state and increment generations
         this.setState({
             fullGrid: grid2,
             generation: this.state.generation + 1
-        })
-    }
-
-    randomSeed = () => {
-        clearInterval(this.intervalId)
-        let copy = clone(this.state.fullGrid);
-        for(let i = 0; i < this.rows; i++) {
-            for(let j = 0; j <this.cols; j++) {
-                if (Math.floor(Math.random() * 4) === 1) {
-                copy[i][j] = true;
-                }
-            }
-        }
-        this.setState({
-            fullGrid: copy
         })
     }
     
@@ -141,7 +135,7 @@ class MainComponent extends React.Component {
         return (
             <div className = "app">
             <div>
-                <h1>The Game of Life</h1>
+                <h1>The Game of Life - by Fady Gouda</h1>
             <Buttons
                 playButton={this.playButton}
                 randomSeed={this.randomSeed}
