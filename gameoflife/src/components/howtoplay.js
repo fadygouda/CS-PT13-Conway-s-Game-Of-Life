@@ -3,6 +3,7 @@ import React from 'react'
 class HowToPlay extends React.Component {
     render () {
         return (
+            
             <div className="howtoplay">
                 <div className="rules">
                     <h3>Rules of Conway's Game of Life</h3>

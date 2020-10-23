@@ -37,10 +37,11 @@
   margin-top: 20px;
 }
 .howtoplay {
+  background-color: #c4ddf2;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  max-width: 75%;
+  max-width: 100%;
   border: 2px solid black;
   margin: 0 auto;
   padding: 1rem 1rem 1rem 1rem;
@@ -48,21 +49,19 @@
 }
 .rules {
   max-width: 45%;
-  font-size: .7rem;
   border: 1px dashed #ff0000;
   padding: 1rem 1rem 1rem 1rem;
   text-align: justify;
   color: #032749;
-  font-size: .85rem;
+  font-size: .9rem;
 }
 .gameinfo {
   max-width: 45%;
-  font-size: .7rem;
   border: 1px dashed #ff0000;
   padding: 1rem 1rem 1rem 1rem;
   text-align: justify;
   color: #032749;
-  font-size: .85rem;
+  font-size: .9rem;
 }
   
 
