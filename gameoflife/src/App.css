@@ -7,6 +7,7 @@
 }
 .main {
   margin: 0 auto;
+  border: 2px solid #032749;
 }
 .box {
   display: inline-block;       
@@ -48,15 +49,14 @@
   flex-direction: column;
   align-items: center;
   max-width: 40%;
-  border: 2px solid black;
+  border: 2px solid #032749;
   padding: .5rem .5rem .5rem .5rem;
-  margin: 0 auto;
   justify-content: space-evenly;
 
 }
 .rules {
   width: 80%;
-  border: 1px dashed #ff0000;
+  border: 1px dashed #032749;
   padding: 1rem 1rem 1rem 1rem;
   text-align: justify;
   color: #032749;
@@ -64,7 +64,7 @@
 }
 .gameinfo {
   max-width: 80%;
-  border: 1px dashed #ff0000;
+  border: 1px dashed #032749;
   padding: 1rem 1rem 1rem 1rem;
   text-align: justify;
   color: #032749;
