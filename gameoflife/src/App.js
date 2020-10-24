@@ -2,15 +2,16 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import HowToPlay from './components/howtoplay'
+import GameInfo from './components/howtoplay'
 import MainComponent from './components/maincomponent'
+import Rules from './components/rules'
 
 
 const App = () => {
   return (
-    <div>
+    <div className="app">
+      <GameInfo />
       <MainComponent />
-      <HowToPlay />
     </div>
   )
 }

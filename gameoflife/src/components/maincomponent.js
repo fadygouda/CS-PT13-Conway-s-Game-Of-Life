@@ -133,7 +133,7 @@ class MainComponent extends React.Component {
     
     render() {
         return (
-            <div className = "app">
+            <div className = "main">
             <div>
                 <h1>The Game of Life - by Fady Gouda</h1>
             <Buttons

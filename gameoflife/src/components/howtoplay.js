@@ -1,6 +1,6 @@
 import React from 'react'
 
-class HowToPlay extends React.Component {
+class GameInfo extends React.Component {
     render () {
         return (
             
@@ -28,4 +28,4 @@ class HowToPlay extends React.Component {
         )
     }
 }
-export default HowToPlay;
+export default GameInfo;

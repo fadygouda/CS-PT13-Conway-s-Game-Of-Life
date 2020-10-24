@@ -1,6 +1,9 @@
 .app {
   background-color: #c4ddf2;
-  border: 5px  #032749 solid
+  border: 5px  #032749 solid;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%
 }
 
 .box {
@@ -22,6 +25,7 @@
   
 .box:hover { 
   background: white;
+  
 }
 
 .center {
@@ -39,16 +43,15 @@
 .howtoplay {
   background-color: #c4ddf2;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   border: 2px solid black;
-  margin: 0 auto;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: .5rem .5rem .5rem .5rem;
 
 }
 .rules {
-  max-width: 45%;
+  width: 80%;
   border: 1px dashed #ff0000;
   padding: 1rem 1rem 1rem 1rem;
   text-align: justify;
@@ -56,7 +59,7 @@
   font-size: .9rem;
 }
 .gameinfo {
-  max-width: 45%;
+  max-width: 80%;
   border: 1px dashed #ff0000;
   padding: 1rem 1rem 1rem 1rem;
   text-align: justify;
